@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="https://bootswatch.com/3/cerulean/bootstrap.min.css" type="text/css">
+
+    <!-- login window -->
+    <link rel="stylesheet" href="vendor/login.css" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="index.html" class="form-signin" method="post">
+            <h2 class="form-signin-heading text-center">AlphaCMS</h2>
+
+            <div class="form-group">
+                <label for="inputEmail">Email Address</label>
+                <input type="email" name="inputEmail" id="inputEmail" placeholder="Email address" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" name="inputPassword" id="inputPassword" placeholder="Enter Password" class="form-control" required>
+            </div>
+
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox" name="" id="" value="rememberme">Remember Me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Sign In</button>
+        </form>
+    </div>
+    
+    <!-- scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

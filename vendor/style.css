@@ -1,0 +1,15 @@
+.navbar {
+    border-radius: 0;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1f87c2;
+    color:#fff;
+    height: 60px;
+}
+
+.tablesorter .header {
+    cursor: pointer;
+}

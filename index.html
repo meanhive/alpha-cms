@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AlphaCMS Dashboard</title>
+
+    <!-- bootstrap theme -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/3/cerulean/bootstrap.min.css"
+      type="text/css"
+    />
+
+    <!-- login window -->
+    <link rel="stylesheet" href="vendor/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">AlphaCMS</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="index.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="pages.html">Pages</a>
+            </li>
+            <li>
+              <a href="categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="users.html">Users</a>
+            </li>
+          </ul>
+          <form
+            action=""
+            class="navbar-form navbar-left search-form"
+            role="search"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                class="form-control"
+                placeholder="Search"
+              />
+            </div>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >My Account <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+              </ul>
+            </li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page content -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="list-group">
+              <a href="index.html" class="list-group-item active">
+                <i class="glyphicon glyphicon-dashboard"></i> Dashboard
+              </a>
+              <a href="pages.html" class="list-group-item">
+                <span class="glyphicon glyphicon-file"></span> Pages
+              </a>
+              <a href="categories.html" class="list-group-item">
+                <span class="glyphicon glyphicon-folder-open"></span> Categories
+              </a>
+              <a href="users.html" class="list-group-item">
+                <span class="glyphicon glyphicon-user"></span> User Accounts
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h1 class="page-header">
+              <span class="glyphicon glyphicon-dashboard"></span> Dashboard
+            </h1>
+            <h3>Latest Pages</h3>
+            <div class="table table-responsive">
+              <table class="table table-striped">
+                <tr>
+                  <th>Page Title</th>
+                  <th>Category</th>
+                  <th>Author</th>
+                </tr>
+                <tr>
+                  <td><a href="page.html">Sample page one</a></td>
+                  <td>Category one</td>
+                  <td>Harish</td>
+                </tr>
+
+                <tr>
+                  <td><a href="page.html">Sample page two</a></td>
+                  <td>Category two</td>
+                  <td>Suresh</td>
+                </tr>
+
+                <tr>
+                  <td><a href="page.html">Sample page three</a></td>
+                  <td>Category three</td>
+                  <td>Mani</td>
+                </tr>
+
+                <tr>
+                  <td><a href="page.html">Sample page four</a></td>
+                  <td>Category four</td>
+                  <td>Rajesh</td>
+                </tr>
+
+                <tr>
+                  <td><a href="page.html">Sample page five</a></td>
+                  <td>Category five</td>
+                  <td>Rajesh</td>
+                </tr>
+              </table>
+            </div>
+            <!-- end of table 1 -->
+            <a href="pages.html" class="btn btn-default">View All Pages</a>
+            <hr />
+            <h3>Latest Users</h3>
+            <div class="table table-responsive">
+              <table class="table table-striped">
+                <tr>
+                  <th>Name</th>
+                  <th>Email id</th>
+                  <th>Group</th>
+                </tr>
+                <tr>
+                  <td><a href="user.html">Harish Kumar</a></td>
+                  <td>harish@gmail.com</td>
+                  <td>Admin</td>
+                </tr>
+
+                <tr>
+                  <td><a href="user.html">Suresh Kumar</a></td>
+                  <td>suresh@gmail.com</td>
+                  <td>Registered</td>
+                </tr>
+
+                <tr>
+                  <td><a href="user.html">Nagesh Rao</a></td>
+                  <td>nageshrao@gmail.com</td>
+                  <td>Registered</td>
+                </tr>
+
+                <tr>
+                  <td><a href="user.html">Nethravathi</a></td>
+                  <td>nethra@gmail.com</td>
+                  <td>Registered</td>
+                </tr>
+
+                <tr>
+                  <td><a href="user.html">Anil Kumar</a></td>
+                  <td>anil@gmail.com</td>
+                  <td>Registered</td>
+                </tr>
+              </table>
+            </div>
+            <!-- end of user table -->
+            <a href="users.html" class="btn btn-default">View All users</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of page content -->
+
+    <footer>
+      <div class="container text-center">
+        <p><strong>AlphaCMS</strong> All Rights Reserved. &copy; 2020.</p>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
